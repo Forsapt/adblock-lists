@@ -20,6 +20,9 @@ m.youtube.com##:xpath(//ytm-reel-shelf-renderer)
 ! Block Recommendations on the video page
 m.youtube.com##:xpath(//div[@class="watch-below-the-player"]/ytm-single-column-watch-next-results-renderer/ytm-item-section-renderer)
 
+! Block trending on the homepage
+m.youtube.com##:xpath(//div[@class="search-bar-entry-point-buttons"]/div[1])
+
 ! === Desktop YouTube ===
 
 ! Block "Activate Watch History" alert
