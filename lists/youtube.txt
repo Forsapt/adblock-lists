@@ -1,0 +1,41 @@
+[Adblock Plus 2.0]
+! Version: 20230910
+! Title: YouTube Distraction-Free Adblock List
+! Last modified: 10 Sep 2023 11:14 UTC
+! Expires: 4 days (update frequency)
+! Homepage: https://github.com/Forsapt/adblock-lists
+
+! === Mobile YouTube ===
+
+! Block "Activate Watch History" alert
+m.youtube.com##:xpath(//ytm-rich-section-renderer[.//a[@href="https://support.google.com/youtube/answer/95725"]])
+
+! Block bottom navigation "Shorts"
+m.youtube.com##:xpath(//ytm-pivot-bar-item-renderer[.//span[contains(text(), "Shorts")]])
+
+! Block Shorts on subscription page and search
+m.youtube.com##:xpath(//ytm-item-section-renderer[.//ytm-reel-shelf-renderer])
+m.youtube.com##:xpath(//ytm-reel-shelf-renderer)
+
+! Block Recommendations on the video page
+m.youtube.com##:xpath(//div[@class="watch-below-the-player"]/ytm-single-column-watch-next-results-renderer/ytm-item-section-renderer)
+
+! === Desktop YouTube ===
+
+! Block "Activate Watch History" alert
+www.youtube.com##:xpath(//ytd-rich-section-renderer[.//a[@href="https://support.google.com/youtube/answer/95725"]])
+
+! Block sidebar "Shorts"
+www.youtube.com##:xpath(//tp-yt-app-drawer[@id="guide"]//div[@id="sections"]//ytd-guide-entry-renderer[.//yt-formatted-string[contains(text(), "Shorts")]])
+
+! Block trending on the sidebar
+www.youtube.com##:xpath(//tp-yt-app-drawer[@id="guide"]//div[@id="sections"]/ytd-guide-section-renderer[.//a[contains(@href, "/feed/trending")]])
+
+! Block Shorts on subscription page and search
+www.youtube.com##:xpath(//div[@class="style-scope ytd-rich-section-renderer" and .//span[@id="title" and contains(text(), "Shorts")]])
+www.youtube.com##:xpath(//ytd-reel-shelf-renderer)
+
+! Block Recommendations on the video page
+www.youtube.com##:xpath(//div[@id="secondary" and @class="style-scope ytd-watch-flexy"])
+
+
