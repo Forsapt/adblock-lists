@@ -1,4 +1,4 @@
-# Adblock Lists 🚫
+# Distraction-Free Adblock List 🚀
 
 A collection of Adblock lists aimed at enhancing your browsing experience by eliminating distractions and time-consuming elements from websites.
 
